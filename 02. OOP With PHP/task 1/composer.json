@@ -1,0 +1,14 @@
+{
+  "name":"first/oop",
+  "description": "simple project one",
+  "keywords": [],
+  "type": "project",
+  "license": "",
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app//"
+    }
+  }
+}
