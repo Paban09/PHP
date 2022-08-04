@@ -1,0 +1,16 @@
+{
+
+  "name": "oop/task-5",
+  "type": "project",
+  "description": "a simple project",
+  "keywords": [],
+  "license": "",
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app//"
+    }
+  }
+
+}
