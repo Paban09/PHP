@@ -13,13 +13,13 @@
     </div>
 </section>
 
-<section class="py-5">
+<section class="py-5 bg-light">
     <div class="container">
         <div class ="row">
             <?php foreach ($allNews as $news){ ?>
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-title"><?php echo $news["title"]?></div>
+                <div class="col-md-12 py-1">
+                    <div class="card border-0">
+                        <div class="card-header fw-bold text-center"><?php echo $news["title"]?></div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4"><img src="<?php echo $news['image']; ?>" alt="" height="200" width="200"/></div>

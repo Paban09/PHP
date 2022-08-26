@@ -22,6 +22,13 @@ if (isset($_GET['page']))
         $news=new News();
         $singleNews=$news->getNewsById($_GET['id']);
         include 'pages/edit.php';
+    }elseif($_GET['page'] == 'delete')
+    {
+        $news=new News();
+        $message=$news->deleteNewsById($_GET['id']);
+        $allNews=$news->getAllNews();
+        include 'pages/dashboard.php';
+
     }
 
 }

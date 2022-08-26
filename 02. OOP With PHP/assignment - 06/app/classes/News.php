@@ -86,4 +86,12 @@ class News
         mysqli_query($this->db->dbConnect(),$this->sql);
         return "pages/dashboard.php";
     }
+
+
+    public function deleteNewsById($id){
+        $this->sql      = "DELETE FROM news WHERE id = '$id'";
+        $this->db=new Database();
+        mysqli_query($this->db->dbConnect(),$this->sql);
+        return "deleted";
+    }
 }

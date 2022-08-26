@@ -9,8 +9,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header fw-bold text-center"> All News || <a href="action.php?page=enter-news" class="btn btn-success">Enter News</a></div>
+                            <div class="card-header fw-bold text-center"> Control Panel </div>
+
                             <div class="card-body">
+                                <div class="py-1"><a href="action.php?page=enter-news" class="btn btn-success">Enter News</a></div>
                                 <table class="table table-bordered table-hover">
 
                                     <thead>
@@ -33,10 +35,10 @@
                                             </td>
                                             <td><?php echo $news["description"]?></td>
                                             <td>
-                                                <a href=action.php?page=edit&&id=<?php echo $news['id']; ?> class="btn btn-success btn-sm">
+                                                <a href="action.php?page=edit&&id=<?php echo $news['id']; ?>" class="btn btn-success btn-sm">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
-                                                <a href="" class="btn btn-danger btn-sm">
+                                                <a href="action.php?page=delete&&id=<?php echo $news['id']; ?>" class="btn btn-danger btn-sm">
                                                     <i class="fa fa-trash"></i>
                                                 </a>
                                             </td>
